@@ -1,0 +1,36 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f5f3e7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #a67c52;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+article {
+  background: white;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  background: #a67c52;
+  color: white;
+  padding: 1em 0;
+}
