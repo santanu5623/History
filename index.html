@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My History Research Blog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My History Research Blog</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensuring a consistent font and clean default styling */
+        body {
+            font-family: "Inter", sans-serif;
+        }
+        .meta {
+            @apply text-sm font-medium text-gray-500 mt-1;
+        }
+    </style>
 </head>
-<body>
 
-  <header>
-    <div class="logo">
-      <h1>My History Research</h1>
-      <p>Exploring the past, understanding the present.</p>
+<!-- Light, clean background -->
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- HEADER: Deep Charcoal/Navy, matching modern_article.html -->
+    <header class="bg-gray-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="logo">
+                <h1 class="text-3xl font-serif font-bold tracking-wider">My History Research</h1>
+                <p class="text-sm text-gray-300 italic">Exploring the past, understanding the present.</p>
+            </div>
+            <!-- NAVIGATION: Simple and clear links -->
+            <nav class="space-x-4 hidden md:block">
+                <a href="index.html" class="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="modern_article.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Thoughts</a> 
+                <a href="#" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Research</a>
+                <a href="#" class="text-gray-300 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER: Responsive Main Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        
+        <!-- MAIN CONTENT (3/4 width) -->
+        <main class="lg:col-span-3 space-y-8">
+            
+            <!-- Article 1: Welcome -->
+            <article class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 transition hover:shadow-xl duration-300">
+                <h2 class="text-3xl font-serif font-bold text-gray-900 mb-2">Welcome to My Blog</h2>
+                <p class="meta">Published on October 18, 2025 by Me</p>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    Welcome to my digital journal where I share thoughts, essays, and findings from my journey as a history student and researcher. This site is a space for deep dives into historiography and complex political theories surrounding the past.
+                </p>
+                <a href="#" class="text-orange-600 hover:text-orange-700 font-semibold mt-3 inline-block">Read More &rarr;</a>
+            </article>
+
+            <!-- Article 2: Archives -->
+            <article class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 transition hover:shadow-xl duration-300">
+                <h2 class="text-3xl font-serif font-bold text-gray-900 mb-2">The Role of Archives in Modern Research</h2>
+                <p class="meta">Published on October 10, 2025 by Me</p>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    Archives serve as bridges to the past. They preserve the narratives that shape identities, nations, and civilizations. 
+                    In this post, I explore how digital archiving is revolutionizing historical studies and the challenges of preservation.
+                </p>
+                <a href="#" class="text-orange-600 hover:text-orange-700 font-semibold mt-3 inline-block">Read More &rarr;</a>
+            </article>
+
+            <!-- Article 3: Newest Article -->
+             <article class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 transition hover:shadow-xl duration-300">
+                <h2 class="text-3xl font-serif font-bold text-gray-900 mb-2">The Politics of Historical Memory in India</h2>
+                <p class="meta">Published on October 19, 2025 by Nityaeanjan Das</p>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    An examination of religious and political conflict in the context of pre-modern Indo-Islamic statecraft, drawing on the perspectives of R. C. Majumdar and Jadunath Sarkar.
+                </p>
+                <!-- IMPORTANT: Link updated to point to the styled HTML version -->
+                <a href="modern_article.html" class="text-orange-600 hover:text-orange-700 font-semibold mt-3 inline-block">Continue Reading &rarr;</a>
+            </article>
+
+        </main>
+
+        <!-- ASIDE (1/4 width) -->
+        <aside class="lg:col-span-1 h-fit bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+            <!-- Sidebar Header Style, matching modern_article.html -->
+            <h3 class="text-xl font-bold mb-4 border-b border-orange-500 pb-2 text-gray-800">Recent Posts</h3>
+            <ul class="space-y-3">
+                <!-- IMPORTANT: Link updated to point to the styled HTML version -->
+                <li><a href="modern_article.html" class="text-blue-600 hover:text-orange-500 font-medium transition duration-150">The Politics of Historical Memory in India</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-orange-500 transition duration-150">The Role of Archives in Modern Research</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-orange-500 transition duration-150">Why Study History?</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-orange-500 transition duration-150">Indian Historical Sources</a></li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-8 mb-4 border-b border-orange-500 pb-2 text-gray-800">About Me</h3>
+            <p class="text-sm text-gray-600">
+                I’m a university history student passionate about cultural studies, research writing, and interpreting historical data.
+            </p>
+        </aside>
     </div>
-    <nav>
-      <a href=index.html>Home</a>
-      <a href="muslim_rule_and_india_1.md">Thoughts</a>
-      <a href="#">Research</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <div class="container">
-    <main>
-      <article>
-        <h2>Welcome to My Blog</h2>
-        <p class="meta">Published on October 18, 2025 by Me</p>
-        <p>
-          Welcome to my digital journal where I share thoughts, essays, and findings from my journey as a history student and researcher.
-        </p>
-      </article>
-
-      <article>
-        <h2>The Role of Archives in Modern Research</h2>
-        <p class="meta">Published on October 10, 2025 by Me</p>
-        <p>
-          Archives serve as bridges to the past. They preserve the narratives that shape identities, nations, and civilizations. 
-          In this post, I explore how digital archiving is revolutionizing historical studies.
-        </p>
-      </article>
-    </main>
-
-    <aside>
-      <h3>Recent Posts</h3>
-      <ul>
-        <li><a href="muslim_rule_and_india_1.html">Muslim_Rule_and_India_1</a></li>
-        <li><a href="#">Why Study History?</a></li>
-        <li><a href="#">Indian Historical Sources</a></li>
-      </ul>
-
-      <h3>About Me</h3>
-      <p>
-        I’m a university history student passionate about cultural studies, research writing, and interpreting historical data.
-      </p>
-    </aside>
-  </div>
-
-  <footer>
-    <p>© 2025 My History Blog. All rights reserved.</p>
-  </footer>
+    <!-- FOOTER: Matches Header -->
+    <footer class="bg-gray-800 text-gray-400 text-center py-4">
+        <p class="text-sm">© 2025 My History Blog. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
