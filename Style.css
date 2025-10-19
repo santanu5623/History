@@ -1,106 +1,192 @@
+/* --- Global Styles & Typography --- */
 body {
-  margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #f1efe9;
-  color: #222;
+    /* Changed to a clean, sans-serif font for a modern look, with a serif fallback */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    /* Clean, off-white background */
+    background-color: #f7f7f7; 
+    /* Darker, softer text color */
+    color: #333; 
+    line-height: 1.6;
 }
 
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Keeping a serif for headings for a classic research feel */
+    color: #4a4a4a; 
+    font-weight: 700;
+}
+
+/* --- Header & Navigation --- */
+
 header {
-  background-color: #3b2e2a;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
+    /* Deep blue/charcoal for a sophisticated look */
+    background-color: #2c3e50; 
+    color: white;
+    padding: 1.5em 0; /* Increased padding */
+    text-align: center;
+    /* Soft shadow for definition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 header .logo h1 {
-  margin: 0;
-  font-size: 2em;
+    margin: 0;
+    font-size: 2.5em; /* Larger, bolder title */
+    letter-spacing: 1px;
 }
 
 header .logo p {
-  font-style: italic;
-  color: #dcdcdc;
+    font-style: normal; /* Removed italic */
+    color: #bdc3c7; /* Lighter, subtle color */
+    margin-top: 5px;
+    font-size: 1em;
 }
 
 nav {
-  background-color: #2b1f1c;
-  padding: 0.5em;
+    /* Slightly lighter than header for contrast */
+    background-color: #34495e; 
+    padding: 1em 0; /* More vertical space */
+    text-align: center;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500; /* Medium weight */
+    font-size: 1.1em;
+    /* Smooth transition for hover effect */
+    transition: color 0.3s ease; 
 }
 
 nav a:hover {
-  color: #e0c08d;
+    /* Bright accent color */
+    color: #e67e22; 
 }
+
+/* --- Layout (Container) --- */
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 20px auto;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Wider container */
+    margin: 30px auto; /* More margin */
+    gap: 30px; /* Larger gap between main and aside */
+    padding: 0 20px; /* Inner padding for smaller screens */
 }
 
+/* --- Main Content Area --- */
+
 main {
-  flex: 3;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    flex: 3;
+    background: white;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Softer rounded corners */
+    /* Cleaner, deeper shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); 
 }
 
 article {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
+    padding-bottom: 30px;
+    /* Lighter, modern separator */
+    border-bottom: 1px solid #eee; 
+    margin-bottom: 30px;
 }
 
-.meta {
-  color: #888;
-  font-size: 0.9em;
+article:last-child {
+    border-bottom: none; /* No line under the last article */
+    margin-bottom: 0;
 }
+
+/* Post Metadata */
+.meta {
+    color: #95a5a6; /* Subtler gray */
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* --- Sidebar (Aside) --- */
 
 aside {
-  flex: 1;
-  background-color: #fff8f2;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    /* Light cream/beige for warmth */
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    /* Same soft shadow as main */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); 
 }
 
 aside h3 {
-  border-bottom: 2px solid #b57f50;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+    /* Removed border-bottom for a cleaner look, using a border for a title box */
+    color: #2c3e50; /* Matching the header color */
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 10px;
+    margin: -30px -30px 20px -30px; /* Extends title box to the edges */
+    border-radius: 10px 10px 0 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 aside ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 aside ul li {
-  margin: 8px 0;
+    margin: 12px 0;
 }
 
 aside a {
-  text-decoration: none;
-  color: #3b2e2a;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 aside a:hover {
-  color: #a65e2a;
+    color: #e67e22; /* Accent color on hover */
+    text-decoration: underline;
 }
 
+aside p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* --- Footer --- */
+
 footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #3b2e2a;
-  color: white;
-  margin-top: 20px;
+    text-align: center;
+    padding: 1.5em;
+    background-color: #2c3e50; /* Matches the header color */
+    color: #bdc3c7;
+    margin-top: 40px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Responsive Adjustments (for smaller screens) --- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    main, aside {
+        flex: 1 1 100%; /* Take full width */
+        margin-bottom: 15px;
+    }
+    
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
 }
